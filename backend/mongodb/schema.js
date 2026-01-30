@@ -23,3 +23,5 @@ const userSchema = new Schema ({
         default: Date.now
     }
 });
+
+export default userSchema;
