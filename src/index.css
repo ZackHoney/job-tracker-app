@@ -1,13 +1,33 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* 1. Use a more-intuitive box-sizing model. */
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* 2. Remove default margins */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Improve base typography and layout */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+/* 4. Remove list styles (bullets/numbers) */
+ul, ol {
+  list-style: none;
+}
+
+/* 5. Make images easier to work with */
+img, picture, video, canvas, svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* 6. Inherit fonts for inputs and buttons */
+input, button, textarea, select {
+  font: inherit;
 }
